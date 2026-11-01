@@ -1,38 +1,152 @@
-Elementor
-Introduction
+<p align="center">
+  <img width="300px" src="https://user-images.githubusercontent.com/10731096/95823103-9ce15780-0d5f-11eb-8010-1bd1b5910d4f.png">
+</p>
 
-Elementor is a visual page builder for WordPress that enables developers and content specialists to create and manage website layouts through a drag-and-drop editing interface. It provides a graphical environment for constructing pages without manually writing HTML, CSS, or JavaScript for every layout element. At the same time, it supports custom code and advanced styling options for projects that require greater control over presentation and behavior.
+<p align="center">
+  <a href="https://npmx.dev/package/element-plus">
+    <img src="https://npmx.dev/api/registry/badge/version/element-plus" />
+  </a>
+  <a href="https://github.com/element-plus/element-plus">
+    <img src="https://img.shields.io/badge/node-%20%3E%3D%2020-47c219" />
+  </a>
+  <a href="https://npmcharts.com/compare/element-plus?minimal=true">
+    <img src="https://img.shields.io/npm/dm/element-plus.svg" />
+  </a>
+  <a href="https://codecov.io/gh/element-plus/element-plus">
+    <img src="https://codecov.io/gh/element-plus/element-plus/branch/dev/graph/badge.svg?token=BKSBO2GLZI"/>
+  </a>
+  <br>
+</p>
 
-The editor uses a widget-based architecture. Widgets represent individual interface components, such as headings, text blocks, images, buttons, forms, menus, and containers. Users can place these components on a page, configure their properties, and organize them into structured layouts. Containers support flexible positioning and responsive arrangements, allowing developers to build interfaces that adapt to different screen sizes.
+<p align="center">Element Plus - A Vue.js 3 UI library</p>
 
-Elementor integrates with the WordPress administration environment and uses the existing website infrastructure, including themes, plugins, media libraries, and content management features. Its editing interface provides real-time visual previews, making it possible to evaluate layout changes before publishing them.
+- 💪 Vue 3 Composition API
+- 🔥 Written in TypeScript
 
-The platform also includes global styling capabilities, reusable templates, and site-wide design components. These features help maintain consistent typography, colors, spacing, and interface patterns across multiple pages. Responsive editing tools allow separate adjustments for desktop, tablet, and mobile breakpoints.
+## Getting Started
 
-Elementor is suitable for corporate websites, landing pages, blogs, portfolios, and e-commerce interfaces. For IT professionals, its practical value lies in combining visual development, reusable components, and WordPress integration while retaining the option to extend functionality through custom CSS, HTML, JavaScript, and compatible plugins.
+Alright, if you're looking to make Element Plus better, keep reading.
+For developers using Element Plus to build websites, please visit [Getting Started](https://element-plus.org/).
 
-Page Structure and Responsive Layout Development
+- 中国大陆[加速镜像站点](https://cn.element-plus.org/zh-CN/)
 
-Elementor organizes page content through a hierarchical layout system. A typical page consists of containers that define structural regions and widgets that provide individual content or interface elements. Containers can include nested containers, enabling developers to create complex layouts while keeping the document structure manageable.
+## Breaking Change List
 
-When building a page, start by defining its main sections. For example, a corporate landing page might contain a header, a hero section, a services grid, a customer information block, and a footer. Add containers for these sections, configure their width and alignment, and then insert the required widgets.
+The first stable release of Element Plus, suitable for production use, was released on February 7, 2022. The API is stable now, and here's a full list on how to upgrade from [Element UI](https://element.eleme.io) to Element Plus.
 
-Flexbox-based containers provide control over element direction, distribution, alignment, wrapping, and spacing. Developers can arrange elements horizontally or vertically and define how available space is distributed. This approach reduces the need for additional layout code and makes structural changes easier to maintain.
+You can find the breaking change list here: [Breaking Change List](https://github.com/element-plus/element-plus/discussions/5658).
 
-Responsive controls are essential when developing production websites. Elementor allows individual layout and styling properties to be adjusted for desktop, tablet, and mobile devices. For example, a three-column services section can display three items on desktop, two on tablet, and one on mobile. Developers can also modify padding, font sizes, element order, and visibility at specific breakpoints.
+### Migration Tool :hammer_and_wrench:
 
-A practical workflow is to build the desktop structure first, then inspect tablet and mobile previews. Check for horizontal overflow, excessively large headings, compressed buttons, and inconsistent spacing. Use responsive settings to correct these issues rather than introducing unnecessary duplicate sections.
+We have made a migration tool for you to migrate your project from [Element UI](https://element.eleme.io) to Element Plus.
 
-For complex projects, maintain a consistent container hierarchy and use reusable layout patterns. This improves editing efficiency, reduces structural inconsistencies, and makes future changes easier to implement across the website.
+You can find the [gogocode migration tool](https://github.com/thx/gogocode/tree/main/packages/gogocode-plugin-element) here.
 
-Templates, Global Styles, and Reusable Components
+We have tested this on [Vue Element Admin](https://github.com/PanJiaChen/vue-element-admin). You can find the transpiled code [here](https://github.com/gogocodeio/vue-element-admin).
 
-Elementor provides reusable design elements that help standardize website interfaces and reduce repetitive configuration. Templates allow developers to save complete pages or individual sections and reuse them in other parts of a WordPress website. This is particularly useful when implementing multiple landing pages that share the same visual structure.
+### Playground
 
-Global styles provide centralized control over common design properties. Developers can define global colors and typography settings and apply them to compatible widgets throughout the project. For example, a website can use one primary color for buttons, a consistent font family for headings, and standardized text colors for body content. When a global value changes, associated elements can be updated without editing each widget individually.
+You can also try out Element Plus with its built-in component playground.
 
-The Theme Builder extends this approach to website-wide structural elements. Depending on the available Elementor version and subscription, developers can create custom headers, footers, single-post templates, archive layouts, and other theme-related components. Display conditions determine where a template is applied. For example, a custom single-post template can be assigned to all blog posts, while a separate template can be used for a particular content category.
+#### Try it with our built-in playground
 
-Reusable components should be designed with maintainability in mind. Avoid creating multiple independent versions of the same header or button style when a shared template or global setting can perform the same function. This reduces configuration drift between pages.
+[Playground](https://element-plus.run/)
 
-For IT teams, a practical implementation strategy is to establish a small design system before developing individual pages. Define typography, color palettes, spacing conventions, and standard templates. Then use these elements consistently across the project. This approach simplifies maintenance, improves visual consistency, and makes collaboration between developers and content editors more predictable.
+#### Try it with CodeSandbox
+
+[![Edit element-plus](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/github/element-plus/element-plus-demo/main)
+
+<p align="center">
+  <b>Special thanks to our generous sponsors:</b>
+</p>
+<br/>
+<p align="center">
+  <b>Platinum Sponsors</b>
+</p>
+<table align="center" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://www.jnpfsoft.com/index.html?from=elementUI" target="_blank">
+          <img width="150px" src="https://github.com/element-plus/element-plus/assets/17680888/6a044d82-c393-48ab-90b8-de0d3aad1624">
+        </a>
+      </td>
+      <td align="center" valign="middle">
+        <a href="http://github.crmeb.net/u/Element?from=element-plus" target="_blank">
+          <img width="150px" src="https://github.com/user-attachments/assets/18079452-986c-4c6e-84ec-fb6175c26567">
+        </a>
+      </td>
+    </tr>
+    </tbody>
+</table>
+<p align="center">
+  <b>Gold Sponsors</b>
+</p>
+<table align="center" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://unaimytext.com" target="_blank">
+          <img width="130px" src="https://github.com/user-attachments/assets/a683ff79-12ec-40d7-acf1-233fad4b00f1">
+        </a>
+      </td>
+      <td align="center" valign="middle">
+        <a href="https://bit.dev/?from=element-ui" target="_blank">
+          <img width="130px" src="https://user-images.githubusercontent.com/10095631/41342907-e44e7196-6f2f-11e8-92f2-47702dc8f059.png">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Translations
+
+Element Plus has been translated into multiple languages. You can click [here](https://crowdin.com/project/element-plus) to help us update the translations or apply to become a proofreader.
+
+For now, we are only providing English and Chinese versions due to limited resources, but we are looking forward to translating it into more languages. Please visit the link
+above and leave a message if you would like to help translate Element Plus into your preferred language.
+
+### How to help translate
+
+See how to help translate in [Translating Element Plus](https://element-plus.org/en-US/guide/translation.html).
+
+## Stay tuned :eyes:
+
+Join our [Discord](https://discord.com/invite/gXK9XNzW3X) to start communicating with everybody.
+
+## This thing is broken, I should help improve it!
+
+Awesommmmmmee. Everything you need is down below. You can also refer to
+[CONTRIBUTING](https://github.com/element-plus/element-plus/blob/dev/CONTRIBUTING.md) and
+[Code of Conduct](https://github.com/element-plus/element-plus/blob/dev/CODE_OF_CONDUCT.md)
+where you'll find the same information listed below.
+
+## I would like to become a part of the development team!
+
+Welcome :star_struck:! We are looking for talented developers to join us and make Element Plus better! If you're interested in joining the development team, please
+reach out to us -- you're more than welcome to join us! :heart:
+
+We are now looking for experts in `Testing`, `GitHub Actions` and `PM`. If you feel like you can and are willing to help, please don't hesitate to reach out to us. :pray:
+
+## Contributors
+
+This project exists thanks to all the people who contribute.
+
+And thank you to all our backers! 🙏
+
+<a href="https://openomy.app/github/element-plus/element-plus" target="_blank" style="display: block; width: 100%;" align="center">
+  <img src="https://openomy.app/svg?repo=element-plus/element-plus&chart=bubble&latestMonth=3" target="_blank" alt="Contribution Leaderboard" style="display: block; width: 100%;" />
+</a>
+
+<hr />
+
+<a href="https://github.com/element-plus/element-plus/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=element-plus/element-plus" />
+</a>
+
+## License
+
+Element Plus is open source software licensed as
+[MIT](https://github.com/element-plus/element-plus/blob/master/LICENSE).
